@@ -32,6 +32,8 @@ export default {
   methods: {
     WeekSelect(index){
       this.activeIndex = index
+      const select = "Week "+this.Weeks[index].id
+      this.$store.commit('setWeek',select)
     }
   }
 };

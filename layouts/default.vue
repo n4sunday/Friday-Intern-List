@@ -20,9 +20,11 @@
   </div>
 </template>
 <script>
+import {store} from '../store/store'
 import HomeIcon from '~/static/icon/home-sketch-w.svg';
 import AddList from '~/static/icon/file-sketch-with-text-lines.svg';
 export default {
+  store,
   data: function() {
     return {
       b4center: 'd-flex align-items-center justify-content-center',

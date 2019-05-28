@@ -1,5 +1,6 @@
 <template>
   <div class="MyList-Component">
+    <div><strong class="h1" :class="b4center">{{$store.getters.weeknow}}</strong></div>
     <strong class="h3">MY DAY LIST</strong>
     <div class="row">
       <div class="col-2 mt-2">
@@ -34,6 +35,7 @@
 export default {
   data: function() {
     return {
+      b4center:'d-flex justify-content-center align-items-center',
       Week: [
         { id: 1, day: 'Monday' },
         { id: 2, day: 'Tuesday' },
