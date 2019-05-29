@@ -20,9 +20,11 @@
   </div>
 </template>
 <script>
+import {store} from '../store/store'
 import HomeIcon from '~/static/icon/home-sketch-w.svg';
 import AddList from '~/static/icon/file-sketch-with-text-lines.svg';
 export default {
+  store,
   data: function() {
     return {
       b4center: 'd-flex align-items-center justify-content-center',
@@ -35,13 +37,15 @@ export default {
 
 <style scoped>
 .container-fluid {
-  background-color: #f8f8f8;
+  background-color: #ecf3f7;
 }
 .HomeIcon {
   margin: 8px;
   width: 40px;
+  transition: 400ms linear;  
 }
 .HomeIcon:hover {
+  transition: 400ms linear;  
   filter: brightness(0.5);
 
 }

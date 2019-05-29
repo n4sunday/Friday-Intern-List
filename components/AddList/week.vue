@@ -32,6 +32,8 @@ export default {
   methods: {
     WeekSelect(index){
       this.activeIndex = index
+      const select = "Week "+this.Weeks[index].id
+      this.$store.commit('setWeek',select)
     }
   }
 };
@@ -39,12 +41,11 @@ export default {
 <style scoped>
 .week-component {
   font-family: 'Nunito', sans-serif;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
   margin: 10px;
   margin-right: 0px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #e3e3e3;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #d7dfe3;
   background-color: #fff;
 }
 .week-item {

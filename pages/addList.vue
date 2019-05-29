@@ -1,14 +1,15 @@
 <template>
-  <div class=" container-fluid pr-0 pl-0">
+  <div class="container-fluid pl-0 pr-0">
     <div class="addList-components row">
-      <div class="block-title col-12">
+      <div class="block-title col-12 d-flex justify-content-center align-items-center">
         <h2 class="title">Add List</h2>
       </div>
-      <div class="col-12">
-        <AddList/>
+      <div class="addList col-12">
+            <AddList/>
       </div>
+
       <div class="col-12">
-        <div class="content row ">
+        <div class="content row">
           <div class="col-2 pl-0 pr-0">
             <Week/>
           </div>
@@ -39,16 +40,18 @@ export default {
 };
 </script>
 <style scoped>
-.addList-components{
+.addlist {
+  width: 100%;
 }
 .block-title {
-  text-align: center;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
-}
-.title {
+  font-family: 'Nunito', sans-serif;
+  background-color: #1c2324;
+  color: #fff;
   height: 50px;
-  padding: 5px 0 5px 0;
+  box-shadow: 0 5px 10px rgba(0,0,0,.05);;
+}
+.addList{
+  background-color: #fff;
 }
 </style>
 
