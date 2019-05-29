@@ -37,13 +37,15 @@ export default {
 
 <style scoped>
 .container-fluid {
-  background-color: #f8f8f8;
+  background-color: #ecf3f7;
 }
 .HomeIcon {
   margin: 8px;
   width: 40px;
+  transition: 400ms linear;  
 }
 .HomeIcon:hover {
+  transition: 400ms linear;  
   filter: brightness(0.5);
 
 }
